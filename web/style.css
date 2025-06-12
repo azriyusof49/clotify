@@ -1,0 +1,393 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 12, 2025, 11:42:18 PM
+    Author     : Azuri
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+/* Page background */
+
+:root {
+  --uniqlo-red: #E60012;         /* Main brand red */
+  --uniqlo-black: #000000;       /* Standard black */
+  --uniqlo-white: #FFFFFF;       /* Background white */
+  --uniqlo-light-gray: #F5F5F5;  /* Light gray background */
+  --uniqlo-dark-gray: #A6A6A6;   /* Subtle gray text */
+  --uniqlo-border: #E0E0E0;      /* Light border color */
+  --light-gray: #f8f8f8;
+  --medium-gray: #e5e5e5;
+  --dark-gray: #333;
+  --text-color: #1a1a1a;
+}
+body {
+  background-color: var(--uniqlo-white);
+  color: var(--uniqlo-black);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.mt-6{
+  margin-top: 3.5%;
+}
+
+.navbar, .footer {
+  background-color: var(--uniqlo-white);
+  border-bottom: 1px solid var(--uniqlo-border);
+}
+
+.btn-primary {
+  background-color: var(--uniqlo-red);
+  color: var(--uniqlo-white);
+  border: none;
+}
+
+.btn-secondary {
+  background-color: var(--uniqlo-black);
+  color: var(--uniqlo-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #cc0010;
+}
+
+/* Center the card */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card styling */
+.login-card {
+  background-color: #f8f8f8; /* light background */
+  border: 1px solid #ccc;    /* subtle border */
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Red button (like Uniqlo's theme) */
+.btn-gold {
+  background-color: #e60012; /* Uniqlo red */
+  color: #ffffff;
+}
+.btn-gold:hover {
+  background-color: #b3000e;
+  color: #ffffff;
+}
+
+/* Input focus */
+.form-control:focus {
+  border-color: #e60012;
+  box-shadow: 0 0 0 0.2rem rgba(230, 0, 18, 0.25);
+}
+
+/* Link styling */
+.nav-btn:hover{
+  color: #b3000e;
+}
+.active{
+  color:#b3000e
+}
+
+a {
+  color: #e60012;
+  text-decoration: none;
+}
+a:hover {
+  color: #b3000e;
+}
+.uniqlo-table {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 14px;
+}
+
+.uniqlo-table th,
+.uniqlo-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.uniqlo-table thead {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.uniqlo-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.uniqlo-table .btn {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 0;
+}
+
+/* Header Styles */
+.header-top {
+    background-color: var(--uniqlo-red);
+    color: white;
+    padding: 8px 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--uniqlo-red) !important;
+}
+
+.navbar-brand span {
+    color: var(--dark-gray);
+}
+
+.nav-icons a {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+.nav-menu {
+    background-color: var(--light-gray);
+    padding: 15px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--uniqlo-red);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-uniqlo {
+    background-color: var(--uniqlo-red);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 3px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.btn-uniqlo:hover {
+    background-color: #c4000d;
+    color: white;
+}
+
+/* Catalog Section */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--uniqlo-red);
+}
+
+.filter-btn {
+    background: white;
+    border: 1px solid var(--medium-gray);
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--uniqlo-red);
+    color: white;
+    border-color: var(--uniqlo-red);
+}
+
+.product-card {
+    background: white;
+    border: 1px solid var(--medium-gray);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.product-img {
+    height: 300px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.product-price {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--uniqlo-red);
+    margin-bottom: 15px;
+}
+
+.product-colors {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--medium-gray);
+}
+
+/* Footer */
+footer {
+    background-color: var(--light-gray);
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--dark-gray);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--uniqlo-red);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--uniqlo-red);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid var(--medium-gray);
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 350px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .product-img {
+        height: 250px;
+    }
+}
+
