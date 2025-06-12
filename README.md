@@ -58,5 +58,7 @@ This project supports role-based access (Admin & User), product management, cart
 
 ## 👨‍💻 Author
 
-Azri Yusof 
+Azri Yusof [S69911]
 [LinkedIn](https://www.linkedin.com/in/azriyusof49?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnwNuuhRhQhmJa4S%2BKZb1ig%3D%3D)
+Danial [S72342]
+Muflih [S72570]
