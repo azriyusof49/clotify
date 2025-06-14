@@ -52,7 +52,7 @@ cd clotify
 * Create products with title, description, price, specifications, and images
 * Update products (price, stock, category, status: active/featured/discontinued)
 * Delete products from catalog (admin-only access)
-* View full product list with real-time search/filter
+* View full product list with real-time filter
 * Maintain audit log of all product changes (for accountability)
 
 ### 🛒 Cart Management (Customer)
@@ -69,8 +69,7 @@ cd clotify
 * Only logged-in users can submit reviews
 * Create Review: General feedback (rating + comment)
 * View Reviews: All submitted reviews with name/alias + rating
-* Delete Review: Users can delete their own reviews
-* *(Planned but not implemented: product-specific reviews, edit reviews, sorting/filtering)*
+* Delete Review: Admin can delete cutomer reviews
 
 ### 👤 User Functionality
 
@@ -82,6 +81,27 @@ cd clotify
 ### 📊 Analytics
 
 * 📈 Line Chart: Track user registration over time
+
+---
+
+## 🖼️ Screenshots
+### 🔹 Class Diagram
+![ClassDiagram](ClassDiagram.jpg)
+
+### 🔹 Home Page
+
+![Home](homepage.png)
+
+### 🔹 Product Catalog
+
+![Catalog](catalog.png)
+
+### 🔹 Admin Panel
+
+![Add Product](addProduct.png)
+
+![User Management](admin.png)
+
 
 ---
 
