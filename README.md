@@ -20,7 +20,7 @@ A clean and functional **Java EE** E-Commerce platform built with **JSP & Servle
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/clotify.git
+git clone https://github.com/azriyusof49/clotify.git
 cd clotify
 ```
 
