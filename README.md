@@ -55,7 +55,7 @@ cd clotify
 * View full product list with real-time filter
 * Maintain audit log of all product changes (for accountability)
 
-### 🛒 Cart Management (Customer)
+### 🛒 Cart Management
 
 * Add to Cart: Select product with quantity, color, and size
 * Real-time stock and price validation before adding items
@@ -64,7 +64,7 @@ cd clotify
 * Clear Cart: Remove individual or all items with confirmation prompt
 * Checkout: Pre-checkout stock validation + redirect to order page
 
-### 💬 Review Management (Customer)
+### 💬 Review Management
 
 * Only logged-in users can submit reviews
 * Create Review: General feedback (rating + comment)
