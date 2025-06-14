@@ -20,7 +20,7 @@ A clean and functional **Java EE** E-Commerce platform built with **JSP & Servle
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/azriyusof49/clotify.git
+git clone https://github.com/yourusername/clotify.git
 cd clotify
 ```
 
@@ -43,9 +43,34 @@ cd clotify
 ### 👨‍💼 Admin Panel
 
 * Admin login authentication
-* Create, update, and delete products
 * View and manage user roles
 * View user registration trends in a chart
+
+### 🛜️ Product Management (Admin Only)
+
+* Secure admin login to access product dashboard
+* Create products with title, description, price, specifications, and images
+* Update products (price, stock, category, status: active/featured/discontinued)
+* Delete products from catalog (admin-only access)
+* View full product list with real-time search/filter
+* Maintain audit log of all product changes (for accountability)
+
+### 🛒 Cart Management (Customer)
+
+* Add to Cart: Select product with quantity, color, and size
+* Real-time stock and price validation before adding items
+* View Cart: Show product details, quantity, and subtotal in MYR
+* Update Cart: Adjust quantity or remove items
+* Clear Cart: Remove individual or all items with confirmation prompt
+* Checkout: Pre-checkout stock validation + redirect to order page
+
+### 💬 Review Management (Customer)
+
+* Only logged-in users can submit reviews
+* Create Review: General feedback (rating + comment)
+* View Reviews: All submitted reviews with name/alias + rating
+* Delete Review: Users can delete their own reviews
+* *(Planned but not implemented: product-specific reviews, edit reviews, sorting/filtering)*
 
 ### 👤 User Functionality
 
@@ -60,38 +85,38 @@ cd clotify
 
 ---
 
-## 🗼️ Screenshots
-
-### 🔹 Home Page
-
-![Home](homepage.png)
-
-### 🔹 Product Catalog
-
-![Catalog](catalog.png)
-
-### 🔹 Admin Panel
-
-![Add Product](addProduct.png)
-
-![User Management](admin.png)
-
----
-
-## 🗂️ Folder Structure
+## 🗄️ Folder Structure
 
 ```
-clotify/
-├── src/
-│   ├── java/
-|   │   ├── cartModule/
-|   │   ├── productModule/
-|   │   ├── reviewModule/
-|   │   └── userModule/
-├── web/
-├── clotify.sql
+StudentManagement/
+├── Web Pages/
+│   ├── META-INF/
+│   │   └── context.xml
+│   ├── WEB-INF/
+│   │   └── web.xml
+│   ├── admin_homepage.jsp
+│   ├── cart.jsp
+│   ├── catalog.jsp
+│   ├── homepage.jsp
+│   ├── index.html
+│   ├── navbaradmin.jsp
+│   ├── register.html
+│   ├── review.jsp
+│   ├── script.js
+│   └── style.css
+├── Source Packages/
+│   ├── default package/
+│   │   └── login.java, Register.java
+│   ├── cartModule package/
+│   │   └── addCart.java, cart.java, cartData.java, cartDelete.java, updateQuantity.java
+│   ├── productModule package/
+│   │   └── addProduct.java, deleteProduct.java, product.java, productData.java,
+│   │       productData.java, updateProduct.java
+│   ├── reviewModule package/
+│   │   └── addReview.java, deleteReview.java, review.java, reviewData.java
+│   └── UserModule package/
+│       └── user.java, userData.java, updateRole.java
 ├── README.md
-└── nbproject/
 ```
 
 ---
