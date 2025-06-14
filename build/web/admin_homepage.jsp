@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="userModule.*"%>
 <%@page import="productModule.*"%>
+<%@page import="reviewModule.*"%>
 <%@page import="java.util.*"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +27,7 @@
 <body>
   <%
     List<product> listProduct = productData.getAllProducts();
+    List<review> listReview = reviewData.getAllReview();
     List<User> list = UserData.getAllUsers();
     int TotalUsers = list.size();
     int TotalProduct = listProduct.size();
@@ -182,33 +184,17 @@
   <div class="container-fluid py-4">
     <!-- Metrics Row -->
     <div class="row g-4 mb-4">
-      <div class="col-md-3">
+      <div class="col-md-6">
         <div class="card h-100">
-          <div class="card-body">
+          <div class="card-body text-center">
             <h6 class="card-title">Total Users</h6>
             <h2><%= TotalUsers%></h2>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6">
         <div class="card h-100">
-          <div class="card-body">
-            <h6 class="card-title">New Orders</h6>
-            <h2>${newOrders}</h2>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h6 class="card-title">Revenue</h6>
-            <h2>$${revenue}</h2>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <div class="card-body">
+          <div class="card-body text-center">
             <h6 class="card-title">Total Product</h6>
             <h2><%= TotalProduct%></h2>
           </div>
@@ -357,6 +343,50 @@
                   %>
                       <tr>
                         <td colspan="4" class="text-center">No products found.</td>
+                      </tr>
+                  <% 
+                    } 
+                  %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Review List</h5>
+            <div class="table-responsive">
+              <table class="table table-striped uniqlo-table">
+                <thead>
+                  <tr>
+                    <th>Review ID</th><th>Rating</th><th>Comment</th><th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% 
+                    if (listReview != null && !listReview.isEmpty()) {
+                      for (review re : listReview) {
+                  %>
+                        <tr>
+                          <td><%= re.getReviewid() %></td>
+                          <td><%= re.getRatting() %></td>
+                          <td><%= re.getComment() %></td>
+                          <td>
+                            <a href="deleteReview?id=<%= re.getReviewid() %>" class="btn btn-primary">Delete</a>
+                          </td>
+                        </tr>
+                  <% 
+                      }
+                    } else {
+                  %>
+                      <tr>
+                        <td colspan="4" class="text-center">No review found.</td>
                       </tr>
                   <% 
                     } 
