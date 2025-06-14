@@ -108,8 +108,8 @@ cd clotify
 ## 🗄️ Folder Structure
 
 ```
-StudentManagement/
-├── Web Pages/
+clotify/
+├── Web/
 │   ├── META-INF/
 │   │   └── context.xml
 │   ├── WEB-INF/
@@ -124,7 +124,7 @@ StudentManagement/
 │   ├── review.jsp
 │   ├── script.js
 │   └── style.css
-├── Source Packages/
+├── src/
 │   ├── default package/
 │   │   └── login.java, Register.java
 │   ├── cartModule package/
